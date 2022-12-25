@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Company</title>
+  <link rel="stylesheet" href="{% static "bootstrap.css"%}">
+  <link rel="stylesheet" href="{% static "all.min.css"%}">
+  <link rel="stylesheet" href="{% static "style.css"%}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark ">
+    <div class="container-fluid ">
+      <a class="navbar-brand p-3 fs-1 text-light" href="/">My-Site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active p-3 fs-3 text-light ms-5" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-3 fs-3 text-light ms-5" href="{% url "about"%}">About</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn bg-dark ms-5 fs-3 p-3">Courses</button>
+            <div class="dropdown-content">
+              <a href="#">Python</a>
+              <a href="#">Javascript</a>
+              <a href="#">MySql</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <h1 class="text-center mt-3">About</h1>
+    <p class="p-3 mt-2 fs-4">Increasingly many people use digital media for learning and for continuing their education. E-learning content formats that are individually modified to meet each learner’s needs are fundamental for successful learning. The digital learning scenarios range from computer-based or Web-based training sessions to interactive learning with simulations or strategic games. A variety of tools to create e-learning content formats can even facilitate complex e-learning training sessions. But digital tools don’t only make development easier: they also help to evaluate the learning success or to determine the user’s individualized training sequence. Furthermore, users of e-learning formats can choose between individually produced or standard contents.</p>  
+    <p class="p-3 mt-2 fs-4">The new digital e-learning content formats are a challenge for educational work. The range of media for electronic learning (e-learning) is considerable. The learning performance can be surprisingly high, however, providing new education media satisfies the needs and learning preferences of the learners. Today more and more people use digital media, such as computers, tablets and smartphones. They use these not only to obtain information, but also to educate themselves voluntarily and in a self-determined fashion.
+    Also, in advanced and university training these new digital learning formats are indispensable. Companies rely specifically on e-learning content formats for product and software training or security instructions. Universities likewise provide their lecture materials online. Among the top 500 German companies, more than two-thirds train their employees utilizing e-learning content.</p>
+    <p class="p-3 mt-2 fs-4"> By now, even a number of technophobe e-learners are open to digital learning. The clear advantage: learning on demand via the internet makes advanced training more flexible. That is why some companies, who encourage employees to take responsibility for their own learning, even provide permanent external and mobile access to learning materials for employees. This saves resources, time and potential travel costs. However, the works council must be included in these considerations.</p>
+<script src="{% static "js/all.min.js"%}"></script>
+<script src="{% static "js/bootstrap.min.js"%}"></script>
+<script src="{% static "js/jquery.js"%}"></script>
+<script src="{% static "js/popper.js"%}"></script>
+
+</body>
+</html>
+
+
